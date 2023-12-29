@@ -35,6 +35,7 @@ class AdaptadorUsuario extends ArrayAdapter<Usuario> {
                 .load(getItem(position).getUrlavatar())
                 .into(imageView);
 
+
     }
 }
 

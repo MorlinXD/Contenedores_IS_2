@@ -28,14 +28,14 @@ class AdaptadorUsuario extends ArrayAdapter<Usuario> {
         lblemail.setText(getItem(position).getEmail());
         TextView lblweb = (TextView)item.findViewById(R.id.lblweb);
         lblweb.setText(getItem(position).getWebsite());
-        return(item);
+
 
         ImageView imageView = (ImageView)item.findViewById(R.id.imgUsr);
         Glide.with(this.getContext())
                 .load(getItem(position).getUrlavatar())
                 .into(imageView);
 
-
+        return(item);
     }
 }
 

@@ -24,10 +24,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".actividadListaAPIRestfulAPI"
-            android:exported="true"
             tools:ignore="DuplicateActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

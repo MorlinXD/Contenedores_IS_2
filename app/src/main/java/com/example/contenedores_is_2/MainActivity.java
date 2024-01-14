@@ -11,10 +11,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-
-import java.text.BreakIterator;
-
 public class MainActivity extends AppCompatActivity
 implements AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener{
 
@@ -37,7 +33,7 @@ implements AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener{
         cmbOpciones.setOnItemSelectedListener(this);
 
         ArrayAdapter<String> adaptador2 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, datos);
-        ListView lstOpciones = (ListView)findViewById(R.id.lstLista);
+        ListView lstOpciones = (ListView)findViewById(R.id.lstListaapi);
         lstOpciones.setAdapter(adaptador2);
 
         lstOpciones.setOnItemClickListener(this::onItemClick);

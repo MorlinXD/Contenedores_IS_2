@@ -22,11 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ly_itemnoticias"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".actividadListaAPIRestfulAPI"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

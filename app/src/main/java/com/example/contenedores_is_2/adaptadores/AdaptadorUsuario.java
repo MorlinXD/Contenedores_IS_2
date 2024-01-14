@@ -14,7 +14,7 @@ import com.example.contenedores_is_2.modelos.Usuario;
 
 import java.util.ArrayList;
 
-class AdaptadorUsuario extends ArrayAdapter<Usuario> {
+public class AdaptadorUsuario extends ArrayAdapter<Usuario> {
     public AdaptadorUsuario(Context context, ArrayList<Usuario> datos) {
         super(context, R.layout.ly_itemusuario, datos);
     }
@@ -23,17 +23,14 @@ class AdaptadorUsuario extends ArrayAdapter<Usuario> {
         View item = inflater.inflate(R.layout.ly_itemusuario, null);
         TextView lblNombre = (TextView)item.findViewById(R.id.lblNombre);
         lblNombre.setText(getItem(position).getNombres());
-        TextView lblemail = (TextView)item.findViewById(R.id.lblEmail);
-        lblemail.setText(getItem(position).getEmail());
+        TextView lblEmail = (TextView)item.findViewById(R.id.lblEmail);
+        lblEmail.setText(getItem(position).getEmail());
         TextView lblweb = (TextView)item.findViewById(R.id.lblweb);
         lblweb.setText(getItem(position).getWebsite());
-
-
         ImageView imageView = (ImageView)item.findViewById(R.id.imgUsr);
         Glide.with(this.getContext())
                 .load(getItem(position).getUrlavatar())
                 .into(imageView);
-
         return(item);
     }
 }

@@ -8,10 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.contenedores_is_2.R;
-import com.example.contenedores_is_2.modelos.Noticia;
+import com.example.contenedores_is_2.noticias;
 
-class AdaptadorNoticias extends ArrayAdapter<Noticia> {
-    public AdaptadorNoticias(Context context, Noticia[] datos) {
+class AdaptadorNoticias extends ArrayAdapter<noticias> {
+    public AdaptadorNoticias(Context context, noticias[] datos) {
         super(context, R.layout.activity_ly_itemnoticias, datos);
     }
     public View getView(int position, View convertView, ViewGroup parent) {

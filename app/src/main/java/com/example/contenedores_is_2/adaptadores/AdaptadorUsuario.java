@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.contenedores_is_2.R;
-import com.example.contenedores_is_2.modelos.Noticia;
 import com.example.contenedores_is_2.modelos.Usuario;
 
 import java.util.ArrayList;
